@@ -1,3 +1,4 @@
+/* ===========================================================================scroll sections active links =====================================================*/
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -17,8 +18,8 @@ window.onscroll = () => {
         }
     });
 
-
-
-
+/* =========================================================================== stick Navbar =====================================================*/
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100);
 
 }
