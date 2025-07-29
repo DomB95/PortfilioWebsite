@@ -204,6 +204,13 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.about-content .Read-More-Paragraph {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    color: var(--text-color);
+    display: none;
+}
+
 .services h2 {
     margin-bottom: 5rem;
     
