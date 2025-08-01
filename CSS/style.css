@@ -211,6 +211,22 @@ span {
     display: none;
 }
 
+.about-more-btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .3s ease;
+}
+.about-more-btn:hover {
+    box-shadow: none;
+}
+
 .services h2 {
     margin-bottom: 5rem;
     
@@ -253,6 +269,72 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+
+
+
+.app-dev-btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .3s ease;
+}
+.app-dev-btn:hover {
+    box-shadow: none;
+}
+.web-dev-btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .3s ease;
+}
+.web-dev-btn:hover {
+    box-shadow: none;
+}
+.grap-dev-btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .3s ease;
+}
+.grap-dev-btn:hover {
+    box-shadow: none;
+}
+
+.services-box .App-Dev-More-Paragraph,
+.services-box .Web-Dev-More-Paragraph,
+.services-box .Graphic-Dev-More-Paragraph {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    color: var(--text-color);
+    display: none;
+}
+
+
+
+
+
+
+
+
+
 
 .portfolio{
     background-color: var(--second-bg-color);
