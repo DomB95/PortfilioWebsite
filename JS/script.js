@@ -40,7 +40,6 @@ window.onscroll = () => {
 
 
 
-
 };
 
 /* =========================================================================== scroll reveal =====================================================*/
@@ -57,9 +56,67 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 /* =========================================================================== typed js =====================================================*/
-const typed = new Typed('.multiple-text', { strings : ['Software Developer', 'Web Developer', 'UI/UX Designer'],
+const typed = new Typed('.multiple-text', { strings : ['Software Developer', 'Web Developer', 'Data Analyst', 'UI/UX Designer'],
     typeSpeed: 100, backSpeed: 100, backDelay: 1000, loop: true
 });
+/* =========================================================================== Show more content =====================================================*/
+    const aboutMoreButton = document.getElementById("about-more-button");
+    const aboutmoreparagraph = document.querySelector(".Read-More-Paragraph");
+
+    aboutMoreButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default anchor click behavior
+        aboutmoreparagraph.classList.toggle("show");
+        if (aboutmoreparagraph.classList.contains("show")) {
+            aboutmoreparagraph.style.display = "block";
+            aboutMoreButton.textContent = "Read Less";
+        } else {
+            aboutmoreparagraph.style.display = "none";
+            aboutMoreButton.textContent = "Read More";
+        }
+    });
+/* =========================================================================== Show more content =====================================================*/
+    const appDevMoreButton = document.getElementById("app-dev-service");
+    const appDevMoreParagraph = document.querySelector(".App-Dev-More-Paragraph");
+    appDevMoreButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default anchor click behavior
+        appDevMoreParagraph.classList.toggle("show");
+        if (appDevMoreParagraph.classList.contains("show")) {
+            appDevMoreParagraph.style.display = "block";
+            appDevMoreButton.textContent = "Read Less";
+        } else {
+            appDevMoreParagraph.style.display = "none";
+            appDevMoreButton.textContent = "Read More";
+        }
+    });
+
+/* =========================================================================== Show more content =====================================================*/
+    const webDevMoreButton = document.getElementById("web-dev-service");
+    const webDevMoreParagraph = document.querySelector(".Web-Dev-More-Paragraph");  
+    webDevMoreButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default anchor click behavior
+        webDevMoreParagraph.classList.toggle("show");
+        if (webDevMoreParagraph.classList.contains("show")) {
+            webDevMoreParagraph.style.display = "block";
+            webDevMoreButton.textContent = "Read Less";
+        } else {
+            webDevMoreParagraph.style.display = "none";
+            webDevMoreButton.textContent = "Read More";
+        }
+    });
+/* =========================================================================== Show more content =====================================================*/
+    const graphDevMoreButton = document.getElementById("graph-dev-service");
+    const graphDevMoreParagraph = document.querySelector(".Graphic-Dev-More-Paragraph");
+    graphDevMoreButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default anchor click behavior
+        graphDevMoreParagraph.classList.toggle("show");
+        if (graphDevMoreParagraph.classList.contains("show")) {
+            graphDevMoreParagraph.style.display = "block";
+            graphDevMoreButton.textContent = "Read Less";
+        } else {
+            graphDevMoreParagraph.style.display = "none";
+            graphDevMoreButton.textContent = "Read More";
+        }
+    });      
 
 const typed2 = new Typed('.multiple-text2', { strings : ['Software Developer', 'Web Developer', 'UI/UX Designer'],
     typeSpeed: 100, backSpeed: 100, backDelay: 1000, loop: true
