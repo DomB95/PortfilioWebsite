@@ -38,6 +38,9 @@ window.onscroll = () => {
 
 
 
+
+
+
 };
 
 /* =========================================================================== scroll reveal =====================================================*/
@@ -58,5 +61,62 @@ const typed = new Typed('.multiple-text', { strings : ['Software Developer', 'We
     typeSpeed: 100, backSpeed: 100, backDelay: 1000, loop: true
 });
 
+const typed2 = new Typed('.multiple-text2', { strings : ['Software Developer', 'Web Developer', 'UI/UX Designer'],
+    typeSpeed: 100, backSpeed: 100, backDelay: 1000, loop: true
+});
 
-/* =========================================================================== button handler =====================================================*/ 
+/* =========================================================================== email js =====================================================*/
+ const form = document.querySelector('contact-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        
+        const name = form.elements['name'].value;
+        const email = form.elements['email'].value;
+        const phone = form.elements['phone'].value;
+        const subject = form.elements['_subject'].value;
+        const message = form.elements['message'].value;
+
+        if(name.length < 2) {
+            alert("Please enter a valid name.");
+            return;
+        }  
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if(!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+        const phoneRegex = /^\d{10}$/;
+        if(phone.length < 10 || !phoneRegex.test(phone)) {
+            alert("Please enter a valid phone number.");
+            return;
+        }
+        if(subject.length < 1) {
+            alert("Please enter a valid subject.");
+            return;
+        }
+        if(message.length == 0 )  {
+            alert("Please enter a valid message.");
+            return;
+        }
+
+        // If all validations pass, submit the form
+        const FormData = new FormData(form);
+        fetch('https://formsubmit.co/dom.burns@mindofdom.info', {
+            method: 'POST',
+            body: FormData,
+        })
+        .then(response => {
+            if (response.ok) {
+                alert("Message sent successfully!");
+                form.reset(); // Reset the form after successful submission
+            } else {
+                alert("There was an error sending your message. Please try again later.");
+            }
+        }).catch(error => {
+            console.error('Error:', error);
+            alert("There was an error sending your message. Please try again later.");
+        });
+    });
+
+        

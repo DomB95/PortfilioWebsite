@@ -56,21 +56,23 @@
             <a href="files/Burns_Dominique_Resume_V2X.pdf" download class="resume-button">Download Resume/CV</a>
         </div>
         <div class="home-img">
-            <img src="images/1000002227.jpg" alt="">
+            <img src="images/openingPic.png" alt="">
         </div>
     </section>
 
     <!-- about section design -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/1000002226.jpg" alt="">
+            <img src="images/Main Photo.png" alt="">
         </div>
         <div class="about-content">
-            <h2 class="heading"> About<span> Me </span></h2>
-            <h3>Software Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Similique eum adipisci placeat doloribus blanditiis possimus totam 
-                incidunt rem quo in. Architecto ut quam adipisci odit quod fugit in tempore consequatur.
+            <h2 class="heading"> About<span> Me! </span></h2>
+            <h3><span class="multiple-text2"></span></h3>
+            <p>Hi, I'm <span>Dominique Burns</span>.
+                a passionate and versatile Software Developer with a strong foundation in full-stack development, mobile apps, and game design. 
+                My journey began when I helped a friend build a website, and that spark quickly grew into a full-fledged passion for coding. Since then, I've developed skills in languages like C++, C#, Java, Kotlin, and Python,
+                and gained hands-on experience with frameworks and tools such as Flutter, Firebase, Unity, and .NET. I'm currently earning my degree in Web Development from Full Sail University, where I've built 
+                projects ranging from portfolio sites to strategy games and mobile applications.
             </p>
             <p class="Read-More-Paragraph">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -233,20 +235,28 @@
     </section>
 
     <!-- contact section design -->
+
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-       <form action="">
+       <form action="https://formsubmit.co/dom.burns@mindofdom.info" id="contact-form" method="POST">
         <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
+            <input type="text" name="name" placeholder="Full Name">
+            <input type="email" name="email" placeholder="Email Address">
         </div>
         <div class="input-box">
-            <input type="number" placeholder="Phone Number">
-            <input type="text" placeholder="Email Subject">
+            <input type="tel" name="phone" placeholder="Phone Number">
+            <input type="text" name="_subject" placeholder="Email Subject">
         </div>
 
+
+
         <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+       
+        <input type="hidden" name="_captcha" value="false">
+
+
         <input type="submit" value="Send Message" class="btn">
        
     </form>
