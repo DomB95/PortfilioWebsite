@@ -159,7 +159,7 @@ const typed2 = new Typed('.multiple-text2', { strings : ['Software Developer', '
 
         // If all validations pass, submit the form
         const FormData = new FormData(form);
-        fetch('https://formsubmit.co/dom.burns@mindofdom.info', {
+        fetch('https://formsubmit.co/drb0708@hotmail.com', {
             method: 'POST',
             body: FormData,
         })
